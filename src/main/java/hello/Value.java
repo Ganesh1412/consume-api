@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Value {
 
-    private Long id;
-    private String content;
+    public Long id;
+    public String content;
 
     public Value() {
     }
@@ -27,11 +27,12 @@ public class Value {
         this.content = content;
     }
 
-    @Override
+/*    @Override
     public String toString() {
         return "Value{" +
                 "id=" + id +
                 ", content='" + content + '\'' +
                 '}';
     }
+*/
 }
